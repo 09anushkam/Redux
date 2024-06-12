@@ -9,7 +9,7 @@ Store.jsx -
             reducer: {},
             })
 
-4. Wrap the App component by Provider and Apply store in main.jsx -  
+3. Wrap the App component by Provider and Apply store in main.jsx -  
 
             import { store } from './Store/Store'
             import { Provider } from 'react-redux'
@@ -17,7 +17,7 @@ Store.jsx -
             <App />
             </Provider>, 
 
-6. Create Reducer dir inside of Store dir and counterSlice.jsx inside Reducer  
+4. Create Reducer dir inside of Store dir and counterSlice.jsx inside Reducer  
 counterSlice.jsx -  
 
 
@@ -72,7 +72,7 @@ counterSlice.jsx -
             export default counterSlice.reducer;
    
 
-8. Updating Store.jsx by importing and using reducer  -  
+5. Updating Store.jsx by importing and using reducer  -  
 
             import { configureStore } from '@reduxjs/toolkit'
             import counterReducer from './Reducers/counterSlice'
@@ -83,7 +83,7 @@ counterSlice.jsx -
             },
             });
 
-10. Useselector() is used to access the data and useDispatch() is used to dispatch the actions  
+6. Useselector() is used to access the data and useDispatch() is used to dispatch the actions  
 App.jsx -  
 
             import React from 'react'
@@ -119,7 +119,7 @@ App.jsx -
 
             export default App;
 
-11. Wrapping of App by Provider,BrowserRouter when u have to use redux and routing both  
+7. Wrapping of App by Provider,BrowserRouter when u have to use redux and routing both  
 
         <Provider store={store}>  
           <BrowserRouter>
