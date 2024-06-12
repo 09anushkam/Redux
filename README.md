@@ -128,8 +128,9 @@ App.jsx -
         </Provider>,
 
 redux-1 : redux docs wala example  
-redux-2 : users ka example
+redux-2 : users ka example  
 redux-3 : async example using api  
+
 
 <!-- Steps of redux toolkit -->
 <!-- boiler plate -->
