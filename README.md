@@ -21,19 +21,19 @@ Store.jsx -
 counterSlice.jsx -  
 
 
-            <!-- 1. import createSlice -->
+             1. import createSlice
    
             import { createSlice } from '@reduxjs/toolkit'  
 
 
-            <!-- 2. Creating initialState -->
+            2. Creating initialState
    
             const initialState = {
             value: 0,
             }
 
 
-            <!-- 3. Creating slice -->
+            3. Creating slice
    
             export const counterSlice = createSlice({
               name: 'counter',
@@ -53,21 +53,21 @@ counterSlice.jsx -
             });
 
 
-            <!-- 4. exporting actions -->
+            4. exporting actions
    
             export const { increment, decrement, incrementByAmount } = counterSlice.actions;  
 
 
-            <!-- Async action code -->
+            Async action code
    
             export const incrementAsync = (amount) => (dispatch) => {
             setTimeout(() => {
             dispatch(incrementByAmount(amount));
             }, 1000);
-         }
+            }
 
 
-            <!-- 5. exporting slice -->
+            5. exporting slice
    
             export default counterSlice.reducer;
    
