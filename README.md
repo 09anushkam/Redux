@@ -17,7 +17,7 @@ Store.jsx -
             <App />
             </Provider>, 
 
-4. Create Reducer dir inside of Store dir and counterSlice.jsx inside Reducer  
+4. Create Reducer dir inside of Store dir and counterSlice.jsx inside Reducer dir  
 counterSlice.jsx -  
 
 
