@@ -54,7 +54,7 @@ counterSlice.jsx -
             export const { increment, decrement, incrementByAmount } = counterSlice.actions;  
 
 
-            Async action code
+            // Async action code
             export const incrementAsync = (amount) => (dispatch) => {
             setTimeout(() => {
             dispatch(incrementByAmount(amount));
